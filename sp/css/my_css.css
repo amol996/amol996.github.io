@@ -36,9 +36,14 @@ hr{
 #personal-desc1,
 #personal-desc2,
 #personal-desc3{
-    background-color: lightgray;
+ background-color: lightgray;
     margin: 0px;
     padding: 13px;
+    height: auto;
+    /* opacity: 1; */
+    transition: 300ms;
+    transition-timing-function: ease-out;
+    overflow: hidden;
 }
 .subTitle-names{
     margin: 10px;
@@ -110,7 +115,10 @@ li{
     border: 2px solid black;
 }
 .displayNone{
-    display: none;
+     height: 0px !important;
+    /* opacity: 0; */
+    padding: 0 13px !important;
+    transition-duration: 500ms !important;
 }
 #right-panel-desc{
     max-height: 380px;
